@@ -24,6 +24,8 @@
 
 ## Dataset preparation
 We used four imaging modalities MRI, CT, X-ray, and PET. The 'modality dataset' folder represents our dataset structure as,
+
+```
 modality dataset/
 ├── train/
 │   ├── CT/
