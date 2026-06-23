@@ -38,7 +38,23 @@ modality dataset/
 │   └── PET/
 │   └── X-Ray/
 ```
-Our dataset is available at: [Download Link](https://www.kaggle.com). 
+Our dataset is available at: [Download Link](). 
 Moreover, you can find English human instructions (train and test) and frozen task representation in the 'data' folder.
 
+## Train Model
+If you want to train the model using your dataset, we recommend that retrain the both modality encoder and task encoder model on new data. To this end, run the "preTrain_ModalityEncoder.py" and "preTrain_TaskEncoders.py" using new data. Next, run the "train.py" on new dataset and ensure that in the datase/config.py:
+```
+LOAD_checkpoints_modality_Encoder = False
+LOAD_checkpoints_TEXT_Encoder = False
+GENERATOR_LOAD_checkpoints = False
+```
+
+Otherwise, you can use pre-trained weights on defined dataset. You can download our checkpoints from: [download link](). 
+
+Please pot downloaded files in the "checkpoints/" and ensure that in the datase/config.py: 
+```
+LOAD_checkpoints_modality_Encoder = True
+LOAD_checkpoints_TEXT_Encoder = True
+GENERATOR_LOAD_checkpoints = True
+```
 
