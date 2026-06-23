@@ -1,3 +1,5 @@
+# if you see this message, It means we are uploading our source code and checkpoints. Please wait....
+
 # InstructMedIR
 ## All-in-One Medical Image Restoration via Human-Written Instruction
 
