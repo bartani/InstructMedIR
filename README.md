@@ -57,4 +57,27 @@ LOAD_checkpoints_modality_Encoder = True
 LOAD_checkpoints_TEXT_Encoder = True
 GENERATOR_LOAD_checkpoints = True
 ```
+Also, you can change checkpoints path in the datase/config.py as,
+```
+IMAGE_ENCODER_checkpoints = f"checkpoints/modality_enc_4D.pth.tar"
+TEXT_MODEL_checkpoints = f"checkpoints/TinyBERT_4D.pth.tar" 
+URN_checkpoints = "checkpoints/URN.pth.tar"
+```
+## Test Model
+To test model:
 
+1: ensure that the model checkpoints are in the "checkpoints/" folder. ([download link]().)
+
+2: in the datase/config.py:
+```
+LOAD_checkpoints_modality_Encoder = True
+LOAD_checkpoints_TEXT_Encoder = True
+GENERATOR_LOAD_checkpoints = True
+```
+
+4: run the "test.py".
+
+
+
+## Contacts
+For any inquiries contact Ako Bartani: <a href="mailto:a.bartani@uok.ac.ir">a.bartani [at] uok.ac.ir</a>
