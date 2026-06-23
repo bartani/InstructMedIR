@@ -14,8 +14,7 @@
 
 ## Requirements
 ```
--Python 3.8+
--PyTorch >= 1.10 (CUDA-enabled for GPU training)
+-PyTorch (CUDA-enabled for GPU training)
 -torchvision
 -numpy, scipy, pillow
 -opencv-python
@@ -23,5 +22,20 @@
 -tqdm, matplotlib
 ```
 
+## Dataset preparation
+We used four imaging modalities MRI, CT, X-ray, and PET. The 'modality dataset' folder represents our dataset structure as,
+modality dataset/
+├── train/
+│   ├── CT/
+│   └── MRI/
+│   └── PET/
+│   └── X-Ray/
+└── test/
+│   ├── CT/
+│   └── MRI/
+│   └── PET/
+│   └── X-Ray/
+```
+Our dataset is available at: [Download Link](https://www.kaggle.com). 
 
 
