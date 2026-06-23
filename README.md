@@ -39,5 +39,6 @@ modality dataset/
 │   └── X-Ray/
 ```
 Our dataset is available at: [Download Link](https://www.kaggle.com). 
+Moreover, you can find human instructions (train and test) and frozen task representation in the 'data' folder.
 
 
