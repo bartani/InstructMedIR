@@ -49,9 +49,9 @@ LOAD_checkpoints_TEXT_Encoder = False
 GENERATOR_LOAD_checkpoints = False
 ```
 
-Otherwise, you can use pre-trained checkpoints on defined dataset. Ti this end, you can download our modality encoder checkpoints from: [download link](https://drive.google.com/file/d/1-9XQ3BTBTk-MAnDdm5X95p906QEEOza4/view?usp=sharing). Also, the task encoder checkpoints are avilable at [download link](https://drive.google.com/file/d/1qu_mbvMAH1iMUKXtTGO7zLaherNszbZr/view?usp=sharing)
+Otherwise, you can use pre-trained checkpoints on defined dataset. To this end, you can download our modality encoder checkpoints from: [download link](https://drive.google.com/file/d/1-9XQ3BTBTk-MAnDdm5X95p906QEEOza4/view?usp=sharing). Also, the task encoder checkpoints are avilable at [download link](https://drive.google.com/file/d/1qu_mbvMAH1iMUKXtTGO7zLaherNszbZr/view?usp=sharing)
 
-Please pot downloaded files in the "checkpoints/" and ensure that in the datase/config.py: 
+Please put downloaded checkpoints files at the "checkpoints/" and ensure that in the datase/config.py: 
 ```
 LOAD_checkpoints_modality_Encoder = True
 LOAD_checkpoints_TEXT_Encoder = True
@@ -66,7 +66,7 @@ URN_checkpoints = "checkpoints/URN.pth.tar"
 ## Test Model
 To test model:
 
-1: ensure that the model checkpoints are in the "checkpoints/" folder. ([download link]().)
+1: ensure that the model checkpoints are avilable at the "checkpoints/" folder.
 
 2: in the datase/config.py:
 ```
