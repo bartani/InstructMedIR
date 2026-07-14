@@ -33,10 +33,6 @@ modality dataset/
 │   └── PET/
 │   └── X-Ray/
 └── test/
-│   ├── CT/
-│   └── MRI/
-│   └── PET/
-│   └── X-Ray/
 ```
 Training dataset is available at: [Download Link](https://drive.google.com/file/d/1-bdD5ef3n8mRjlyO7WGz0eA5j8RoB7Ap/view?usp=sharing). 
 Moreover, you can find human instructions (train and test) and frozen task representation in the 'data' folder.
