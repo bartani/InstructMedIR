@@ -49,7 +49,7 @@ LOAD_checkpoints_TEXT_Encoder = False
 GENERATOR_LOAD_checkpoints = False
 ```
 
-Otherwise, you can use pre-trained weights on defined dataset. You can download our checkpoints from: [download link](). 
+Otherwise, you can use pre-trained checkpoints on defined dataset. Ti this end, you can download our modality encoder checkpoints from: [download link](https://drive.google.com/file/d/1-9XQ3BTBTk-MAnDdm5X95p906QEEOza4/view?usp=sharing). Also, the task encoder checkpoints are avilable at [download link](https://drive.google.com/file/d/1qu_mbvMAH1iMUKXtTGO7zLaherNszbZr/view?usp=sharing)
 
 Please pot downloaded files in the "checkpoints/" and ensure that in the datase/config.py: 
 ```
