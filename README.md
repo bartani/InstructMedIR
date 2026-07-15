@@ -1,4 +1,4 @@
-# if you see this message, It means we are uploading our source code and checkpoints. Please wait....
+# if you see this message, It means we are uploading our test dataset. Please wait....
 
 # InstructMedIR
 ## All-in-One Medical Image Restoration via Human-Written Instruction
@@ -45,7 +45,7 @@ LOAD_checkpoints_TEXT_Encoder = False
 GENERATOR_LOAD_checkpoints = False
 ```
 
-Otherwise, you can use pre-trained checkpoints on defined dataset. To this end, you can download our modality encoder checkpoints from: [download link](https://drive.google.com/file/d/1-9XQ3BTBTk-MAnDdm5X95p906QEEOza4/view?usp=sharing). Also, the task encoder checkpoints are avilable at [download link](https://drive.google.com/file/d/1qu_mbvMAH1iMUKXtTGO7zLaherNszbZr/view?usp=sharing)
+Otherwise, you can use pre-trained checkpoints on defined dataset. To this end, you can download our modality encoder checkpoints from: [download link](https://drive.google.com/file/d/1-9XQ3BTBTk-MAnDdm5X95p906QEEOza4/view?usp=sharing). Also, the task encoder checkpoints are avilable at [download link](https://drive.google.com/file/d/1qu_mbvMAH1iMUKXtTGO7zLaherNszbZr/view?usp=sharing) Furthermore, the Universal Image Restoration Network checkpoints are avilable at [download link](https://drive.google.com/file/d/1Mvg06HkTeNhJMXduc_N1CQxl9cywBVZH/view?usp=sharing)
 
 Please put downloaded checkpoints files at the "checkpoints/" and ensure that in the datase/config.py: 
 ```
@@ -64,6 +64,10 @@ To test model:
 
 1: ensure that the model checkpoints are avilable at the "checkpoints/" folder.
 
+- modality encoder checkpoints: [download link](https://drive.google.com/file/d/1-9XQ3BTBTk-MAnDdm5X95p906QEEOza4/view?usp=sharing)
+- task encoder checkpoints: [download link](https://drive.google.com/file/d/1qu_mbvMAH1iMUKXtTGO7zLaherNszbZr/view?usp=sharing)
+- Universal Image Restoration Network checkpoints: [download link](https://drive.google.com/file/d/1Mvg06HkTeNhJMXduc_N1CQxl9cywBVZH/view?usp=sharing)
+
 2: in the datase/config.py:
 ```
 LOAD_checkpoints_modality_Encoder = True
@@ -71,8 +75,18 @@ LOAD_checkpoints_TEXT_Encoder = True
 GENERATOR_LOAD_checkpoints = True
 ```
 
-4: run the "test.py".
+3: You can use test samples (modality images) with diferent degredation at "/modality dataset/test" and instruction at "/data/test_instruction-4D.csv". Moreover, the full test dataset is avilable at:....
 
+4: Please set the degraded image path, instruction, and save path in the text.py
+```
+save_path = "save path result"
+path = "your degraded image path"
+instruction = "write your instruction"
+```
+
+5: run the "test.py".
+
+## Citation
 
 
 ## Contacts
