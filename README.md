@@ -1,5 +1,3 @@
-# if you see this message, It means we are uploading our test dataset. Please wait....
-
 # InstructMedIR
 ## All-in-One Medical Image Restoration via Human-Written Instruction
 
@@ -75,7 +73,7 @@ LOAD_checkpoints_TEXT_Encoder = True
 GENERATOR_LOAD_checkpoints = True
 ```
 
-3: You can use test samples (modality images) with diferent degredation at "/modality dataset/test" and instruction at "/data/test_instruction-4D.csv". Moreover, the full test dataset is avilable at:....
+3: You can use test samples (modality images) with diferent degredation at "/modality dataset/test" and instruction at "/data/test_instruction-4D.csv". Moreover, the full test dataset is avilable at: [download link](https://drive.google.com/file/d/1-TAqw3NFeIGM176kqPKFxHBHcmLTLk-N/view?usp=sharing)
 
 4: Please set the degraded image path, instruction, and save path in the text.py
 ```
